@@ -1,0 +1,14 @@
+{
+  "name": "pet-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Pet.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kevin Okinedo",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.2.4"
+  }
+}
