@@ -71,13 +71,13 @@ class Pokemon {
     static attack(pokemon, moveName, damage){
       const missChance = Math.floor(Math.random() * 100);
         if(missChance < 20){
-          return `${pokemon.name} dodged the attack!`
+          return `${moveName} has been used, ${pokemon.name} dodged the attack!`
         } else if(damage > pokemon.hp) {
           pokemon.hp = 0
-          return `It's effective, ${pokemon.name} has fainted!`
+          return `${moveName} has been used, it's effective, ${pokemon.name} has fainted! You win!`
         } else {
           pokemon.hp = pokemon.hp - damage
-          return `It's effective, ${pokemon.name} is at ${pokemon.hp} hit points.`
+          return `${moveName} has been used, it's effective, ${pokemon.name} is at ${pokemon.hp} hit points.`
         }
     }
 }
